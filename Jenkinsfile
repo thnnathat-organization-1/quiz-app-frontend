@@ -12,7 +12,7 @@ pipeline {
             when {
                 branch "staging"
             }
-            setps{
+            steps{
                 sh '''Hello from staging'''
             }
         }
