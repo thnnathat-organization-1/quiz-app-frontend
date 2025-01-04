@@ -21,7 +21,7 @@ pipeline {
             when {
                 branch 'PR-*'
             }
-            setup{
+            step{
                 echo 'this only runs for the PRs'
             }
         }
