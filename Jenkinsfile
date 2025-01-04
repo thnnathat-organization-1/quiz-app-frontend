@@ -16,5 +16,14 @@ pipeline {
                 sh '''echo Hello from staging'''
             }
         }
+
+        stage('for the PR') {
+            when {
+                branch 'PR-*'
+            }
+            setup{
+                echo 'this only runs for the PRs'
+            }
+        }
     }
 }
