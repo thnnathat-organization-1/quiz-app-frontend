@@ -7,5 +7,14 @@ pipeline {
                 echo "Hello from Jenkinsfile"
             }
         }
+
+        stage('for the staging branch') {
+            when {
+                branch "staging"
+            }
+            setps{
+                sh '''Hello from staging'''
+            }
+        }
     }
 }
