@@ -13,7 +13,7 @@ pipeline {
                 branch "staging"
             }
             steps{
-                sh '''Hello from staging'''
+                sh '''echo Hello from staging'''
             }
         }
     }
